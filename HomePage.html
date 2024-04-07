@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <title>Code Reengineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body>
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 shadow-lg">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+            <span class="self-center text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Code Reengineering</span>
+        <div class="flex justify-between md">
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#2C2C2C] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  border-gray-700">
+                <a href="HomePage.html" class="group text-black font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2 mx-3">Home</span></a>
+                <a href="#" class="group text-black font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2 mx-3">Repository</span></a>     
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full ml-3 pr-3 text-[#2C2C2C] rounded  md:border-0 md:p-0 md:w-auto transition-all duration-300 ease-in-out border-gray-700 relative after:bg-[#0A427D] after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Change Preventer<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-[#f5f5f5] divide-y divide-gray-100 rounded-lg shadow w-44 divide-white">
+                    <ul class="text-sm text-[#2C2C2C]" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-t-lg hover:text-white">Divergent Change</a>
+                            </li>
+                            <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Shotgun Surgery</a>
+                            </li>
+                            <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-b-lg hover:text-white">Parallel Inheritance Hierarchies</a>
+                            </li>
+                    </ul>
+                </div>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full ml-3 pr-3 text-[#2C2C2C] rounded  md:border-0 md:p-0 md:w-auto transition-all duration-300 ease-in-out border-gray-700 relative after:bg-[#0A427D] after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Dispensables<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                <div id="dropdownNavbar2" class="z-10 hidden font-normal bg-[#f5f5f5] divide-y divide-gray-100 rounded-lg shadow w-44 divide-white">
+                    <ul class="text-sm text-[#2C2C2C]" aria-labelledby="dropdownLargeButton">
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-t-lg hover:text-white">Comments</a>
+                        </li>
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Duplicate Code</a>
+                        </li>
+                        <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Lazy Class</a>
+                        </li>                             
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Data Class</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Dead Code</a>
+                        </li>                               
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-b-lg hover:text-white">Speculative Generality</a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="pt-48 h-screen bg-[url('img/HomeBg.jpg')] bg-cover min-h-screen bg-no-repeat flex flex-col items-center">
+        <div class="max-w-4/6 min-w-1/2 text-[#2C2C2C] text-[36px] md:text-[64px] font-extrabold">Bad Code Smell</div>
+        <div class="max-w-4/6 min-w-1/2 text-[#0a427d] text-[36px] md:text-[64px] font-extrabold">Code Reengineering Project</div>
+        <div class="flex w-1/2 text-[18px] md:text-[22px] justify-center">
+            <a href="ChangePreventerPage.html" class="rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#0a427d] text-[#0a427d] text-white">
+                <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-[#0a427d] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                <span class="relative text-[#0a427d] transition duration-300 group-hover:text-white ease">Change Preventer</span>
+            </a>
+            <a href="#" class="rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-[#0a427d] text-[#0a427d] text-white">
+                <span class="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-[#0a427d] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+                <span class="relative text-[#0a427d] transition duration-300 group-hover:text-white ease">Dispensables</span>
+            </a>
+        </div>
+        <div class="mt-8 md:mt-0 md:mt-56 text-[#2C2C2C] font-medium text-lg md:text-xl">© This Website was made by Dicky Dharma Susanto & Nicholas Ryan Putra Setiawan</div>
+        
+        <!-- <pre class="overflow-auto mt-96 bg-gray-700">
+            <code class="language-javascript text-sm font-mono">
+                <span class="text-blue-600">function</span> <span class="text-purple-600">myFunction</span>() {
+                    <span class="text-gray-500">// This is a comment</span>
+                    <span class="text-blue-600">var</span> <span class="text-yellow-600">x</span> = <span class="text-green-600">'Hello, world!'</span>;
+                    <span class="text-blue-600">return</span> <span class="text-yellow-600">x</span>;
+                }
+            </code>
+        </pre> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
