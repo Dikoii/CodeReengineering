@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-dark.css">
+    <title>Change Preventer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 shadow-lg">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+            <span class="self-center text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Code Reengineering</span>
+            <div class="flex justify-between md">
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#2C2C2C] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  border-gray-700">
+                    <a href="HomePage.html" class="group text-black font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2 mx-3">Home</span></a>
+                    <a href="#" class="group text-black font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2 mx-3">Repository</span></a>     
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full ml-3 pr-3 text-[#2C2C2C] rounded  md:border-0 md:p-0 md:w-auto transition-all duration-300 ease-in-out border-gray-700 relative after:bg-[#0A427D] after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Change Preventer<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                    <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-[#f5f5f5] divide-y divide-gray-100 rounded-lg shadow w-44 divide-white">
+                        <ul class="text-sm text-[#2C2C2C]" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="ChangePreventerPage.html#Divergent" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-t-lg hover:text-white">Divergent Change</a>
+                                </li>
+                                <li>
+                                <a href="ChangePreventerPage.html#Shotgun" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Shotgun Surgery</a>
+                                </li>
+                                <li>
+                                <a href="ChangePreventerPage.html#Parallel" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-b-lg hover:text-white">Parallel Inheritance Hierarchies</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full ml-3 pr-3 text-[#2C2C2C] rounded  md:border-0 md:p-0 md:w-auto transition-all duration-300 ease-in-out border-gray-700 relative after:bg-[#0A427D] after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Dispensables<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                    <div id="dropdownNavbar2" class="z-10 hidden font-normal bg-[#f5f5f5] divide-y divide-gray-100 rounded-lg shadow w-44 divide-white">
+                        <ul class="text-sm text-[#2C2C2C]" aria-labelledby="dropdownLargeButton">
+                            <li>
+                            <a href="DispensablesPage.html#Comments" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-t-lg hover:text-white">Comments</a>
+                            </li>
+                            <li>
+                            <a href="DispensablesPage.html#Duplicate" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Duplicate Code</a>
+                            </li>
+                            <li>
+                            <a href="DispensablesPage.html#Lazy" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Lazy Class</a>
+                            </li>                             
+                            <li>
+                                <a href="DispensablesPage.html#Data" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Data Class</a>
+                            </li>
+                            <li>
+                                <a href="DispensablesPage.html#Dead" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Dead Code</a>
+                            </li>                               
+                            <li>
+                                <a href="DispensablesPage.html#Speculative" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-b-lg hover:text-white">Speculative Generality</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="flex flex-col">
+        <div class="bg-gray-100 px-36 pt-32 pb-16 flex flex-col shadow-lg">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-5xl font-extrabold whitespace-nowrap text-[#2C2C2C] text-center">Change Preventer</h1>
+                <p class="text-justify mt-10">Comment merupakan suatu komentar yang sebenarnya ditujukan untuk memperjelas fungsi dari kode yang dibuat tetapi penambahan comment ini membuat kode menjadi tidak rapi dan efisien. Cara untuk mengatasinya adalah dengan memberikan nama method atau class dengan baik.</p>                
+            </div>
+            <ul class="list-disc mt-4 ml-4">
+                <li><a href="#Comments" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Divergent Change</span></a></li>
+                <li><a href="#Duplicate" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Shotgun Surgery</span></a></li>
+                <li><a href="#Lazy" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Parallel Inheritance Hierarchies</span></a></li>
+                <li><a href="#Data" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Parallel Inheritance Hierarchies</span></a></li>
+                <li><a href="#Dead" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Parallel Inheritance Hierarchies</span></a></li>
+                <li><a href="#Speculative" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Parallel Inheritance Hierarchies</span></a></li>
+            </ul>
+        </div>
+        <div class="px-36 pt-24" id="Comments">
+            <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Divergent Change</h2>
+            <p class="my-5 text-justify">Ini terjadi ketika sebuah class atau module sering mengalami perubahan karena berbagai alasan yang tidak terkait. Ini menunjukkan bahwa ada masalah dengan design karena satu bagian dari code yang seharusnya stabil justru harus berubah secara terus-menerus. Ini dapat menyebabkan kesulitan dalam maintenance dan development karena setiap perubahan memerlukan modifikasi besar-besaran. </p>
+            <ul class="py-5 list-disc">
+                <h2 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h2>
+                <li>Extract Class</li>
+                <li>Extract Superclass dan Extract Subclass</li>
+            </ul>
+        </div>
+        <div class="px-36 flex flex-col">
+            <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+            <pre>
+                <code class="language-java">// Order.java:
+public class Order {
+      public void create() {
+          // logic for creating order
+      }
+          
+      public void process() {
+          // logic for processing order
+      }
+}</code>
+            </pre>
+            <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+            <pre>
+                <code class="language-java">// Order.java:
+public class Order {
+      public void create() {
+          // logic for creating order
+      }
+          
+      public void process() {
+          // logic for processing order
+      }
+}</code>
+            </pre>
+    </div>
+    <div class="px-36 pt-24" id="Duplicate">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Shotgun Surgery</h2>
+        <p class="my-5 text-justify">Ini terjadi ketika sebuah class atau module sering mengalami perubahan karena berbagai alasan yang tidak terkait. Ini menunjukkan bahwa ada masalah dengan design karena satu bagian dari code yang seharusnya stabil justru harus berubah secara terus-menerus. Ini dapat menyebabkan kesulitan dalam maintenance dan development karena setiap perubahan memerlukan modifikasi besar-besaran. </p>
+        <ul class="py-5 list-disc">
+            <h2 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h2>
+            <li>Extract Class</li>
+            <li>Extract Superclass dan Extract Subclass</li>
+        </ul>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+    </div>
+    <div class="px-36 pt-24" id="Lazy">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Parallel Inheritance Hierarchies</h2>
+        <p class="my-5 text-justify">Ini terjadi ketika sebuah class atau module sering mengalami perubahan karena berbagai alasan yang tidak terkait. Ini menunjukkan bahwa ada masalah dengan design karena satu bagian dari code yang seharusnya stabil justru harus berubah secara terus-menerus. Ini dapat menyebabkan kesulitan dalam maintenance dan development karena setiap perubahan memerlukan modifikasi besar-besaran. </p>
+        <ul class="py-5 list-disc">
+            <h2 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h2>
+            <li>Extract Class</li>
+            <li>Extract Superclass dan Extract Subclass</li>
+        </ul>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+    </div>
+    <div class="px-36 pt-24" id="Data">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Parallel Inheritance Hierarchies</h2>
+        <p class="my-5 text-justify">Ini terjadi ketika sebuah class atau module sering mengalami perubahan karena berbagai alasan yang tidak terkait. Ini menunjukkan bahwa ada masalah dengan design karena satu bagian dari code yang seharusnya stabil justru harus berubah secara terus-menerus. Ini dapat menyebabkan kesulitan dalam maintenance dan development karena setiap perubahan memerlukan modifikasi besar-besaran. </p>
+        <ul class="py-5 list-disc">
+            <h2 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h2>
+            <li>Extract Class</li>
+            <li>Extract Superclass dan Extract Subclass</li>
+        </ul>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+    </div>
+    <div class="px-36 pt-24" id="Dead">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Parallel Inheritance Hierarchies</h2>
+        <p class="my-5 text-justify">Ini terjadi ketika sebuah class atau module sering mengalami perubahan karena berbagai alasan yang tidak terkait. Ini menunjukkan bahwa ada masalah dengan design karena satu bagian dari code yang seharusnya stabil justru harus berubah secara terus-menerus. Ini dapat menyebabkan kesulitan dalam maintenance dan development karena setiap perubahan memerlukan modifikasi besar-besaran. </p>
+        <ul class="py-5 list-disc">
+            <h2 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h2>
+            <li>Extract Class</li>
+            <li>Extract Superclass dan Extract Subclass</li>
+        </ul>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+    </div>
+    <div class="px-36 pt-24" id="Speculative">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Parallel Inheritance Hierarchies</h2>
+        <p class="my-5 text-justify">Ini terjadi ketika sebuah class atau module sering mengalami perubahan karena berbagai alasan yang tidak terkait. Ini menunjukkan bahwa ada masalah dengan design karena satu bagian dari code yang seharusnya stabil justru harus berubah secara terus-menerus. Ini dapat menyebabkan kesulitan dalam maintenance dan development karena setiap perubahan memerlukan modifikasi besar-besaran. </p>
+        <ul class="py-5 list-disc">
+            <h2 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h2>
+            <li>Extract Class</li>
+            <li>Extract Superclass dan Extract Subclass</li>
+        </ul>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Order {
+  public void create() {
+      // logic for creating order
+  }
+      
+  public void process() {
+      // logic for processing order
+  }
+}</code>
+        </pre>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
