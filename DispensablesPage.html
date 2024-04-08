@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-dark.css">
+    <title>Dispensables</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="bg-white fixed w-full z-20 top-0 start-0 shadow-lg">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+            <span class="self-center text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Code Reengineering</span>
+            <div class="flex justify-between md">
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#2C2C2C] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  border-gray-700">
+                    <a href="HomePage.html" class="group text-black font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2 mx-3">Home</span></a>
+                    <a href="#" class="group text-black font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2 mx-3">Repository</span></a>     
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar1" class="flex items-center justify-between w-full ml-3 pr-3 text-[#2C2C2C] rounded  md:border-0 md:p-0 md:w-auto transition-all duration-300 ease-in-out border-gray-700 relative after:bg-[#0A427D] after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Change Preventer<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                    <div id="dropdownNavbar1" class="z-10 hidden font-normal bg-[#f5f5f5] divide-y divide-gray-100 rounded-lg shadow w-44 divide-white">
+                        <ul class="text-sm text-[#2C2C2C]" aria-labelledby="dropdownLargeButton">
+                            <li>
+                                <a href="ChangePreventerPage.html#Divergent" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-t-lg hover:text-white">Divergent Change</a>
+                                </li>
+                                <li>
+                                <a href="ChangePreventerPage.html#Shotgun" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Shotgun Surgery</a>
+                                </li>
+                                <li>
+                                <a href="ChangePreventerPage.html#Parallel" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-b-lg hover:text-white">Parallel Inheritance Hierarchies</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full ml-3 pr-3 text-[#2C2C2C] rounded  md:border-0 md:p-0 md:w-auto transition-all duration-300 ease-in-out border-gray-700 relative after:bg-[#0A427D] after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">Dispensables<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg></button>
+                    <div id="dropdownNavbar2" class="z-10 hidden font-normal bg-[#f5f5f5] divide-y divide-gray-100 rounded-lg shadow w-44 divide-white">
+                        <ul class="text-sm text-[#2C2C2C]" aria-labelledby="dropdownLargeButton">
+                            <li>
+                            <a href="DispensablesPage.html#Comments" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-t-lg hover:text-white">Comments</a>
+                            </li>
+                            <li>
+                            <a href="DispensablesPage.html#Duplicate" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Duplicate Code</a>
+                            </li>
+                            <li>
+                            <a href="DispensablesPage.html#Lazy" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Lazy Class</a>
+                            </li>                             
+                            <li>
+                                <a href="DispensablesPage.html#Data" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Data Class</a>
+                            </li>
+                            <li>
+                                <a href="DispensablesPage.html#Dead" class="block px-4 py-2 hover:bg-[#0a427d] hover:text-white">Dead Code</a>
+                            </li>                               
+                            <li>
+                                <a href="DispensablesPage.html#Speculative" class="block px-4 py-2 hover:bg-[#0a427d] hover:rounded-b-lg hover:text-white">Speculative Generality</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="flex flex-col">
+        <div class="bg-gray-100 px-36 pt-32 pb-16 flex flex-col shadow-lg">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-5xl font-extrabold whitespace-nowrap text-[#2C2C2C] text-center">Dispensables</h1>
+                <p class="text-justify mt-10">Elemen dalam kode yang tidak diperlukan atau redundan, yang dapat dihapus tanpa mengubah fungsionalitas atau kualitas dari kode tersebut. Contohnya adalah komentar yang menjelaskan kode yang sudah jelas, kode yang tidak pernah dipanggil atau digunakan, atau penggunaan variabel yang tidak perlu. Menghilangkan dispensables dapat membantu membersihkan dan meningkatkan kejelasan kode.</p>                
+            </div>
+            <ul class="list-disc mt-4 ml-4">
+                <li><a href="#Comments" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Comments</span></a></li>
+                <li><a href="#Duplicate" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Duplicate Code</span></a></li>
+                <li><a href="#Lazy" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Lazy Class</span></a></li>
+                <li><a href="#Data" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Data Class</span></a></li>
+                <li><a href="#Dead" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Dead Code</span></a></li>
+                <li><a href="#Speculative" class="group text-[#0A427D] text-[18px] font-medium transition-all duration-300 ease-in-out"><span class="bg-left-bottom bg-gradient-to-r from-[#0A427D] to-[#0A427D] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out my-2">Speculative Generality</span></a></li>
+            </ul>
+        </div>
+        <div class="px-36 pt-24" id="Comments">
+            <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Comments</h2>
+            <p class="my-5 text-justify">Komentar yang terlalu banyak atau tidak relevan dapat menjadi masalah karena mereka cenderung usang seiring waktu dan bisa jadi tidak akurat. Kode yang bersih seharusnya dapat menjelaskan dirinya sendiri tanpa terlalu banyak mengandalkan komentar.</p>
+            <div class="py-5">
+                <h3 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h3>
+                <ul class="pl-5 list-disc">
+                    <li>Extract Variable</li>
+                    <li>Extract Method</li>
+                    <li>Rename Method</li>
+                    <li>Introduce Assertion</li>
+                </ul>
+            </div>
+            <p class="my-5 text-justify">Contoh, terdapat komentar yang menjelaskan secara redundan apa yang sudah jelas dari kode. Solusinya, kita dapat menghapus komentar tersebut karena kode sudah cukup jelas tanpa perlu penjelasan tambahan.</p>
+        </div>
+        <div class="px-36 flex flex-col">
+            <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+            <pre>
+                <code class="language-java">// Order.java:
+// This method calculates the sum of two numbers
+public int add(int a, int b) {
+    // Add two numbers and return the result
+    return a + b;
+}</code>
+            </pre>
+            <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+            <pre>
+                <code class="language-java">// Order.java:
+public int add(int a, int b) {
+    return a + b;
+}</code>
+            </pre>
+    </div>
+    <div class="px-36 pt-24" id="Duplicate">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Duplicate Code</h2>
+        <p class="my-5 text-justify">Ini terjadi ketika ada fragmen kode yang identik atau sangat mirip di berbagai bagian sistem. Hal ini bisa menjadi masalah karena mengubah satu bagian kode mungkin tidak mencerminkan perubahan di bagian duplikatnya, yang dapat menyebabkan ketidaksesuaian dan bug.</p>
+        <div class="py-5">
+            <h3 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h3>
+            <ul class="pl-5 list-disc">
+                <li>Extract Method then Pull Up Field</li>
+                <li>Pull Up Constructor Body</li>
+                <li>Form Template Method</li>
+                <li>Substitute Algorithm</li>
+                <li>Extract Class</li>
+                <li>Extract Superclass</li>
+                <li>Consolidate Conditional Expression and use Extract Method</li>
+                <li> Consolidate Duplicate Conditional Fragments</li>
+            </ul>
+        </div>
+        <p class="my-5 text-justify">Contoh, terdapat kode yang sama untuk menghitung luas lingkaran dan persegi panjang di berbagai tempat. Solusinya, kita dapat menggabungkan logika yang sama ke dalam satu method calculateArea untuk menghindari duplikasi kode.</p>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public double calculateCircleArea(double radius) {
+    return Math.PI * radius * radius;
+}
+
+public double calculateRectangleArea(double length, double width) {
+    return length * width;
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public double calculateArea(String shape, double... dimensions) {
+    if ("circle".equalsIgnoreCase(shape)) {
+        return Math.PI * dimensions[0] * dimensions[0];
+    } else if ("rectangle".equalsIgnoreCase(shape)) {
+        return dimensions[0] * dimensions[1];
+    }
+    return 0; // Handle other shapes
+}</code>
+        </pre>
+    </div>
+    <div class="px-36 pt-24" id="Lazy">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Lazy Class</h2>
+        <p class="my-5 text-justify">Kelas yang hanya memiliki sedikit atau tidak ada fungsionalitas yang digunakan juga dianggap sebagai "bad smell" karena dapat menambah kompleksitas tanpa memberikan nilai tambah yang signifikan.</p>
+        <div class="py-5">
+            <h3 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h3>
+            <ul class="pl-5 list-disc">
+                <li>Inline Class</li>
+                <li>Collapse Hierarchy</li>
+            </ul>
+        </div>
+        <p class="my-5 text-justify">Contoh, terdapat class `AddNumber` yang hanya memiliki satu method sederhana. Solusinya, kita memindahkan method tersebut ke class yang lebih relevan, seperti Calculator, untuk menghilangkan kelas yang tidak memberikan nilai tambah.</p>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+class AddNumber {
+    // Hanya mempunyai satu method
+    public int add(int a, int b) {
+        return a + b;
+    }
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+// Move add method to a more relevant class
+class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    // Memiliki method lain seperti perkalian, pengurangan, pembagian, dll.
+}</code>
+        </pre>
+    </div>
+    <div class="px-36 pt-24" id="Data">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Data Class</h2>
+        <p class="my-5 text-justify">Kelas yang hanya berisi data tanpa adanya metode atau fungsionalitas tambahan sering kali dianggap sebagai masalah karena mereka tidak menawarkan perilaku atau logika yang dapat dimanfaatkan.</p>
+        <div class="py-5">
+            <h3 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h3>
+            <ul class="pl-5 list-disc">
+                <li>Encapsulate Field</li>
+                <li>Encapsulate Collection</li>
+                <li>Move Method and Extract Method</li>
+                <li>Remove Setting Method and Hide Method</li>
+            </ul>
+        </div>
+        <p class="my-5 text-justify">Contoh, terdapat class `Person` yang hanya berisi atribut dan setter getter tanpa logika tambahan. Solusinya, kita dapat menambahkan metode baru `printDetails()` yang tidak hanya getter atau setter tetapi memberikan fungsionalitas tambahan untuk mencetak detail person ke konsol. Hal ini memperluas fungsionalitas kelas tanpa harus mengorbankan karakteristik data class yang sederhana.</p>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // setter & getter
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // setter & getter
+
+    // New method added
+    public void printDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}</code>
+        </pre>
+    </div>
+    <div class="px-36 pt-24" id="Dead">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Dead Code</h2>
+        <p class="my-5 text-justify">Ini adalah kode yang tidak lagi digunakan atau diakses oleh bagian lain dari program. Dead code bisa menjadi beban karena memakan ruang dan dapat menyesatkan pemeliharaan karena orang mungkin mengira kode tersebut masih relevan.</p>
+        <div class="py-5">
+            <h3 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h3>
+            <ul class="pl-5 list-disc">
+                <li>Menghapus code tersebut</li>
+            </ul>
+        </div>
+        <p class="my-5 text-justify">Contoh, terdapat method `oldMethod` yang tidak pernah digunakan. Solusinya, kita dapat menghapus method tersebut karena tidak memberikan kontribusi apa pun pada program..</p>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+public void oldMethod() {
+    // Some old logic
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+// Remove oldMethod</code>
+        </pre>
+    </div>
+    <div class="px-36 pt-24" id="Speculative">
+        <h2 class="text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Speculative Generality</h2>
+        <p class="my-5 text-justify">Terjadi ketika ada struktur atau fungsi yang dibuat secara berlebihan atau kompleks dengan anggapan bahwa mereka mungkin dibutuhkan di masa depan. Namun, dalam praktiknya, fitur-fitur ini tidak pernah digunakan, yang menyebabkan overhead dan kompleksitas yang tidak perlu.</p>
+        <div class="py-5">
+            <h3 class="my-2 text-3xl font-bold whitespace-nowrap text-[#2C2C2C]">Treatment</h3>
+            <ul class="pl-5 list-disc">
+                <li>Collapse Hierarchy</li>
+                <li>Inline Class</li>
+                <li>Inline Method</li>
+                <li>Remove Parameter</li>
+                <li>Menghapus field tersebut</li>
+            </ul>
+        </div>
+        <p class="my-5 text-justify">Contoh, terdapat interface Shape dan implementasi Circle yang tidak digunakan. Solusinya, kita dapat menghapus interface dan implementasi yang tidak terpakai untuk mengurangi kompleksitas dan mempertahankan hanya yang benar-benar diperlukan.</p>
+    </div>
+    <div class="px-36 flex flex-col">
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">Before</p>
+        <pre>
+            <code class="language-java">// Order.java:
+interface Shape {
+    void draw();
+}
+
+// Unused implementation
+class Circle implements Shape {
+    public void draw() {
+        // Draw circle
+    }
+}</code>
+        </pre>
+        <p class="text-2xl font-bold whitespace-nowrap text-[#2C2C2C]">After</p>
+        <pre>
+            <code class="language-java">// Order.java:
+// Remove unused interface and implementation</code>
+        </pre>
+    </div>
+    <div class="bg-[#0a427d] rounded-lg shadow m-4 mt-10">
+        <div
+          class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+        >
+          <span class="text-sm text-white sm:text-center"
+            >© This Website was made by Dicky Dharma Susanto & Nicholas Ryan Putra
+            Setiawan.
+          </span>
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
